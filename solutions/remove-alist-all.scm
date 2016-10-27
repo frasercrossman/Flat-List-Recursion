@@ -1,4 +1,4 @@
-(define remove-assoc-all
+(define remove-alist-all
   (lambda (sym alist)
     (if (null? alist)
         '()
