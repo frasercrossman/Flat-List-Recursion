@@ -26,12 +26,12 @@
 ;;; list of other values associated with a matching key.
 ;;;
 ;;; The use of "equal?" as opposed to "eq?" or "eqv?" is important.
-;;; "eq?"		- Returns true if two values share the same enivronment 
-;;;						pointer otherwise returns false.
-;;; "eqv?"	- Returns true if two atomic values are equal or as "eq?" 
-;;;						returns true otherwise returns false.
-;;; "equal?"- Returns true if two lists, vectors, etc. have corresponding 
-;;;						elements or as "eqv?" returns true otherwise returns false.
+;;; "eq?"    - Returns true if two values share the same enivronment 
+;;;            pointer otherwise returns false.
+;;; "eqv?"   - Returns true if two atomic values are equal or as "eq?" 
+;;;            returns true otherwise returns false.
+;;; "equal?" - Returns true if two lists, vectors, etc. have corresponding 
+;;;            elements or as "eqv?" returns true otherwise returns false.
 ;;;						
 ;;; The equivalent 'corresponding elements' feature is important as the 
 ;;; key may not be an atomic value and so when checked for equivalence 
