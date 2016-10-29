@@ -19,7 +19,7 @@
 ;;; method was used.
 ;;; 
 ;;; Basis case:
-;;; The list is null as either the list passed was empty of the end has 
+;;; The list is null as either the list passed was empty or the end has 
 ;;; been reached. The empty list is returned.
 ;;;
 ;;; Inductive case:
@@ -29,7 +29,7 @@
 ;;; If the predicate "(equal? <symbolic-exp> <key>)" is satisfied then 
 ;;; construct a pair with the car pointing to the associated value of 
 ;;; the matching key, and the cdr pointing to the recursively determined 
-;;; list of other values associated with a matching key.
+;;; list of other values associated with the matching keys.
 ;;; Otherwise the association is skipped and the function is recursively 
 ;;; called using the same symbolic expression and the rest of the 
 ;;; association list.
@@ -45,5 +45,5 @@
 ;;; The equivalent 'corresponding elements' feature is important as the 
 ;;; key may not be an atomic value and so when checked for equivalence 
 ;;; with a symbolic expression all corresponding elements must be checked 
-;;; for equivalence.
+;;; for equivalence to be determined.
 ;;;
